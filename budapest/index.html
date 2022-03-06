@@ -13,6 +13,7 @@
 
   <!-- Bootstrap core CSS -->
   <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
   <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
 
@@ -40,13 +41,31 @@
       background-repeat: no-repeat;
     }
 
-    .bd1-bg-img {
-      background-image: url('assets/img/szimpla1.jpg');
+    .carousel-container {
+      width: 75%;
+    }
+
+    .carousel-img {
+      height: 30em;
+      width: auto;
+      background-size: auto;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+
+    .post-bg-img {
       height: 15em;
       width: auto;
       background-size: cover;
       background-position: center 50%;
       background-repeat: no-repeat;
+    }
+
+    #wk1 {
+      background-image: url('assets/img/szimpla1.jpg');
+    }
+    #wk2 {
+      background-image: url('');
     }
   </style>
 
@@ -81,13 +100,8 @@
     <div class="navbar navbar-dark bg-dark shadow-sm">
       <div class="container">
         <a href="#" class="navbar-brand d-flex align-items-center">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
-            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2"
-            viewBox="0 0 24 24">
-            <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
-            <circle cx="12" cy="13" r="4" />
-          </svg>
-          <strong>Trevor's Travels: Budapest</strong>
+          <i class="bi bi-globe2"></i>
+          <strong style="padding-left: 0.5em;">Trevor's Travels: Budapest</strong>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
           aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
@@ -104,8 +118,7 @@
         <div class="col-lg-6 col-md-8 mx-auto">
           <h1 class="fw-light">Snippets of My Life Abroad</h1>
           <p class="lead text-muted">A small collection of anecdotes that I may or may not have to write weekly for the
-            Academy
-            anyway... I don't want them to go to waste!</p>
+            Academy anyway... I don't want them to go to waste!</p>
           <p>
             <a href="#row1" class="btn btn-primary my-2">Let's Read!</a>
             <!-- <a href="#" class="btn btn-secondary my-2">Secondary action</a> -->
@@ -114,26 +127,70 @@
       </div>
     </section>
 
+    <!-- <section class="py-5 text-center container carousel-container">
+      <h2>Interesting Architechture</h2>
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/img/city1.jpg" class="d-block carousel-img" alt=" ...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/szimpla1.jpg" class="d-block carousel-img" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/city1.jpg" class="d-block carousel-img" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section> -->
+
     <div class="album py-5 bg-light">
       <div class="container">
-
+        <h2>Posts</h2>
         <div id="row1" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
           <div class="col">
             <div class="card shadow-sm">
-              <div class="bd1-bg-img card-img-top">
+              <div id="wk1" class="post-bg-img card-img-top">
                 <a href="posts/160122.html">
                   <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
                     xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
                     preserveAspectRatio="xMidYMid slice" focusable="false">
                     <title>Week of 16 JAN</title>
                     <rect width="100%" height="100%" fill="#00000000" /><text x="50%" y="50%" fill="#eceeef"
-                      dy=".3em">Week
-                      1</text>
+                      dy=".3em">Week 1</text>
                   </svg>
                 </a>
               </div>
-
-
               <div class="card-body">
                 <p class="card-text">My first week in country was as wonderful as it was unbelieveable. Here's a quick
                   note about some things that stood out to me right away.</p>
@@ -149,29 +206,35 @@
               </div>
             </div>
           </div>
-          <!--<div class="col">
+          <div class="col">
             <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                  dy=".3em">Thumbnail</text>
-              </svg>
-
+              <div id="wk2" class="post-bg-img card-img-top">
+                <a href="posts/230122.html">
+                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Week of 23 JAN</title>
+                    <rect width="100%" height="100%" fill="#00000000" /><text x="50%" y="50%" fill="#eceeef"
+                      dy=".3em">Week 2</text>
+                  </svg>
+                </a>
+              </div>
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
+                <p class="card-text">Second week was a blast! Got a little traveling, met some more new people, and ate
+                  a lot of food.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    <form action="posts/230122.html">
+                      <button type="submit" class="btn btn-sm btn-outline-secondary">Read More</button>
+                    </form>
+                    <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
                   </div>
-                  <small class="text-muted">9 mins</small>
+                  <small class="text-muted">30 JAN 22</small>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col">
+          <!--<div class="col">
             <div class="card shadow-sm">
               <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
                 role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
