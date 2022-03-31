@@ -3,6 +3,10 @@ body {
   margin-bottom: 60px; /* Margin bottom by footer height */
 }
 
+.bg-dark {
+  background-color: #212529;
+}
+
 .starter-template {
   padding: 3rem 1.5rem;
   text-align: center;
