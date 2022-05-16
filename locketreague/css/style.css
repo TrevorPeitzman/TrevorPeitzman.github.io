@@ -1,0 +1,86 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#container {
+    position: absolute;
+	width: 100%;/*## fill page*/
+	height: 100%;/*## fill page*/
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+    overflow: hidden;/*## no scrollbars*/
+}
+
+#overlay {
+    position: relative;/*## in the same place; overlaid*/
+    left: 10px;
+    top: 10px;
+    z-index: 20;/*## text is over canvas*/
+}
+
+#canvas {
+	background-image: url("bg.png");
+    position: absolute;/*## in the same place; overlaid*/
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+    z-index: 10;/*## text is over canvas*/
+    overflow: hidden;/*## no scrollbars*/
+}
+
+h1 {
+    font-family: Copperplate, fantasy;
+    color: red;
+    font-size: 60px;
+    text-align: center;
+}
+
+h2 {
+    font-family: Copperplate, fantasy;
+    color: red;
+    text-align: center;
+    background: black;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+  color: black;
+  text-align: center;
+}
+
+.darkClass
+{
+    background-color: black;
+    filter:alpha(opacity=40); /* IE */
+    opacity: 0.4; /* Safari, Opera */
+    -moz-opacity:0.40; /* FireFox */
+    z-index: 20;
+    height: 100%;
+    width: 100%;
+    background-repeat:no-repeat;
+    background-position:center;
+    position:absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#opaque {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    display: none;
+    background-color: black;
+    filter: alpha(opacity=30);
+    opacity: 0.3;
+}
+
