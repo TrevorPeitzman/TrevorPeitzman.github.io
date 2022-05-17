@@ -10,5 +10,6 @@ Stay tuned for excellent topics and eventually a buisness-card site
 
 
 ## Projects
-2020 Toyota 86 Rebuild
+Toyota 86 Rebuild
+[LocketReague](https://trevorpeitzman.github.io/locketreague/) - my final project for AIT Computer Graphic, Spring 2022. An over-simplified WebGL version of the popular cars-and-giant-soccer-balls game.
 <!-- [Visa Currency Conversion](https://trevorpeitzman.github.io/currencyconverter/) -->
