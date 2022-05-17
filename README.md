@@ -1,5 +1,4 @@
-# TrevorPeitzman.github.io
-https://trevorpeitzman.github.io/
+# [trevorpeitzman.github.io](https://trevorpeitzman.github.io/)
 A website about me and my endeavours
 
 
