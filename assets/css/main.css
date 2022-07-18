@@ -322,15 +322,25 @@ a:hover {
 	/* Set your background with this */
 
 	/* TODO: url("images/bg.jpg") put this back in when you figure out how to make it adaptive on all displays */
-	background: #348cb2  bottom left;
-	background-repeat: repeat-x;
+	/* background: url("images/bg_og.jpg");
+	/* background: #348cb2  bottom left; */
+	/* background-repeat: repeat-x;
 	background-origin: content-box;
 	size: cover;
-	height: inherit;
-	/* left: 0;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	opacity: 1;
+	position: relative;
+	top: 0; */
+
+	background: #b2c1ce url("images/bg3-edit.jpg") bottom left;
+	background-repeat: repeat-x;
+	height: 100%;
+	left: 0;
 	opacity: 1;
 	position: fixed;
-	top: 0; */
+	top: 0;
 }
 
 @-moz-keyframes bg {
